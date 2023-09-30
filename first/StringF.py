@@ -31,5 +31,5 @@ if __name__ == '__main__':
     print(today)
     print(f'{today:%d-%m-%Y %H:%M}')# маски с datetime
     print(f'{result/result2:.2f}%') # пример стчёта процентов
-    l = f'{result} конь'
-    print(l)
+    l = f'{result} кон'
+    print(f'{l}ь')
