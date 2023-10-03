@@ -1,7 +1,7 @@
 # не используем range(Len(List)), если нужен индекс то используем enumerate
 
 if __name__ == '__main__':
-    array = [e for e in range(10)]
+    array = [e for e in range(10) if e%2==0]
     print(array)
     for index, element in enumerate(array):
         print(f'{index+1} - {element}')
@@ -38,3 +38,6 @@ if __name__ == '__main__':
     values = list(map(func,values))
     print(numbers)
     print(values)
+    string = ['mewcmwokcmsk','weffw','we']
+    string = list(map(str.upper,string))        # можно истользовать методы объктов
+    print(string)
