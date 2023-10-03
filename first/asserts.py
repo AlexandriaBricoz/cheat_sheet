@@ -1,5 +1,7 @@
 #-ecnn naponb conepnT CMMBONbI n6bIx 2 Ha6opoB BepHyTb Good
 #ecnu naponb conepxT CNMBonbl no6bIx 3 Ha6opoB,BepHyTb Very Good
+
+        # выводит ошибку если booling == False
 import string
 def password_strength(value:str)->str:
     if len(value)<8:
