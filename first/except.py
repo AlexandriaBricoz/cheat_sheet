@@ -1,6 +1,6 @@
 try:
     number = int(input("Введите число: "))
     print("Введенное число:", number)
-except ValueError:
+except ValueError:  # можно ничего не писать либо в скобках несколько ошибок
     print("Преобразование прошло неудачно")
 print("Завершение программы")
