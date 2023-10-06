@@ -23,5 +23,5 @@ class Human:
 if __name__ == '__main__':
     student = Human('Don',date(int(input()),int(input()),int(input())))
     print(student.get_age())
-    string = list(map(Human.set_birthday(23), student))  # можно истользовать методы объктов
+    string = list(map(Human.set_birthday(23), student))  # можно использовать методы объектов
     print(string)
