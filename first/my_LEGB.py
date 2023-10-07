@@ -8,7 +8,7 @@ max = 10
 def outer():
     scope ='enclosed'
     def inner():
-        scope ='local'
+        scope ="local"
         print(scope)            # питон ищет переменную или функцию изнутри
         #print(max([1,2,3]))     # здесь будет ошибка из-за того что max переназначен
     inner()
