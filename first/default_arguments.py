@@ -5,7 +5,7 @@ def calc(time=[]):          # ОШИБКА нельзя использовать
     time.append(1)
     print(time)
 
-def calc2(time=None):          # ОШИБКА нельзя использовать изменяемы типы, значение по умолчнию создётся один раз!!!
+def calc2(time=None):          # ПРАВИЛЬНЫЙ ВЫРИАНТ!!!
     if time==None:
         time = [2]
     print(time)
