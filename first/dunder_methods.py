@@ -84,7 +84,7 @@ class Wallet():
         return sum(e.value for e in self.items)
 
     def __getitem__(self, item):            # вывод по индексу
-        if item<0 or item>len(self.items):
+        if item < 0 or item > len(self.items):
             raise IndexError
         return self.items[item]
 

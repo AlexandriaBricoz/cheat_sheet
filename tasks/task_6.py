@@ -1,4 +1,4 @@
-def func(list1,list2):
+def func(list1, list2):
     list = []
     for value in range(len(list1)):
         list.append(list1[value])
@@ -6,4 +6,4 @@ def func(list1,list2):
     return list
 
 
-print(func([1,2,3],[10,20,30]))
+print(func([1, 2, 3], [10, 20, 30]))

@@ -1,8 +1,8 @@
-def season(i:int)->str:
+def season(i: int) -> str:
     seasons = {
-        1:'winter',
-        2:'winter',
-        3:'spring',
+        1: 'winter',
+        2: 'winter',
+        3: 'spring',
         4: 'spring',
         5: 'spring',
         6: 'summer',
@@ -14,6 +14,7 @@ def season(i:int)->str:
         12: 'winter',
     }
     return seasons[i]
+
 
 if __name__ == '__main__':
     print(season(int(input())))

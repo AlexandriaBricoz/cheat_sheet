@@ -5,7 +5,7 @@
 # __setattr__ - вызывается при попытке установить атрибут
 # __slots__ - создан для уменьшения, занимаемой объектами(при использовании нельзя добавлять атрибуты)
 
-from pympler import asizeof     # для измерения размера в байтах(по умолчанию) просто топ
+from pympler import asizeof  # для измерения размера в байтах(по умолчанию) просто топ
 
 
 class Cat:
@@ -15,19 +15,19 @@ class Cat:
         self._name = name
         self._age = age
 
-    @property       # это декораторы GETTER
+    @property  # это декораторы GETTER
     def name(self):
         return self._name
 
-    @name.setter    # SETTER
+    @name.setter  # SETTER
     def name(self, value):
         self._name = value
 
-    @property       # GETTER
+    @property  # GETTER
     def age(self):
         return self._age
 
-    @age.setter    # SETTER
+    @age.setter  # SETTER
     def age(self, value):
         self._age = value
 
@@ -37,7 +37,7 @@ class Dog:
         self.name = name
         self.age = age
 
-    def __setattr__(self, key, value):      # тип сетеры для всех аргументов
+    def __setattr__(self, key, value):  # тип сетеры для всех аргументов
         self.__dict__[key] = value
 
 

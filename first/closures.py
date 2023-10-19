@@ -5,32 +5,40 @@
 
 def new():
     array = []
-    def inner(x:int)->list:
+
+    def inner(x: int) -> list:
         array.append(x)
         return array
+
     return inner
+
 
 def counter():
     count = 0
+
     def inner():
         nonlocal count
-        count+=1
+        count += 1
         return count
+
     return inner
 
-def pow_(degree:int)->int:
-    def inner(velue:int)->int:
-        return velue**degree
+
+def pow_(degree: int) -> int:
+    def inner(velue: int) -> int:
+        return velue ** degree
+
     return inner
+
 
 def average(degree):
-    return lambda value: value**degree
+    return lambda value: value ** degree
 
 
 if __name__ == '__main__':
     boys = new()
     girls = new()
-    print(boys(1))      # не паресекаются, как отдельные объекты
+    print(boys(1))  # не паресекаются, как отдельные объекты
     print(boys(2))
     print(boys(3))
     print(girls(4))
